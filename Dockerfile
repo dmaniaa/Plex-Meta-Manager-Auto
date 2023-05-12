@@ -20,4 +20,4 @@ RUN echo "**** install system packages ****" \
  && apt-get autoclean \
  && rm -rf /requirements.txt /tmp/* /var/tmp/* /var/lib/apt/lists/*
 VOLUME /config
-ENTRYPOINT ["/tini", "-s", "python3", "plex_meta_manager.py", "--"]
+ENTRYPOINT ["/tini", "-s", "python3", "main.py", "--"]
